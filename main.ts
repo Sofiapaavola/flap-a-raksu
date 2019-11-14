@@ -21,13 +21,28 @@ class Raksu {
 
 
 const start = () => { 
-    position = 50;
-    square.style.top = position + "px";
+    position = 200;
+    square.style.bottom = position + "px";
     document.getElementById("fly").addEventListener("click", fly)
 }
 
-const fly = (distance) => square.style.top = distance + "px";
+const falls = (event) => { 
+    const startingBottom = square.style.bottom;
+    const getNumber = parseInt(startingBottom); 
+    square.style.bottom = (getNumber - 20) + "px";
+}
 
+const fly = (event) => {
+    const startingBottom = square.style.bottom;
+    const getNumber = parseInt(startingBottom); 
+    square.style.bottom = (getNumber + 10) + "px";
+    // falls(event);
+} 
+
+
+//every ... two methods that run at the same time 
+// - one to jump up and one to jump down 
+  
 start();
 
 // pipes 
