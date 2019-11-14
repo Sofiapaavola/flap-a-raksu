@@ -24,6 +24,15 @@ section.game-area {
   height: 400px;
   width: 700px;
   margin: 0 auto; }
+  section.game-area #raksu {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url("/img/editedraksucutout.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; }
 
 div {
   display: flex;
