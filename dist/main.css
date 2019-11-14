@@ -23,7 +23,8 @@ section.game-area {
   border: dotted black 2px;
   height: 400px;
   width: 700px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   section.game-area #raksu {
     height: 50px;
     width: 50px;
